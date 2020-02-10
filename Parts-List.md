@@ -1,7 +1,7 @@
 ## Parts List
 
 | Item                            | Total Cost | Purchase Link                                                |
-| ------------------------------- | ---------- | :----------------------------------------------------------- |
+| :------------------------------ | :--------- | :----------------------------------------------------------- |
 | water filtration system         | $108.24    | [aquasana.com/...](https://www.aquasana.com/drinking-water-filter-systems/under-counter-faucet-2-stage/chrome) |
 | electric solenoid valve         | $19.94     | [electricsolenoidvalves.com/...](https://www.electricsolenoidvalves.com/1-4-12v-dc-electric-plastic-solenoid-valve/?gclid=Cj0KCQiA7OnxBRCNARIsAIW53B_mqhWERAm4H16aWnoii-s6UdT-edAzLE60pQY-LprUZFgntIm0AdwaAoupEALw_wcB) |
 | Adafruit ESP8266 breakout board | $9.99      | [microcenter.com/...](https://www.microcenter.com/product/458078/HUZZAH_ESP8266_Breakout) |
