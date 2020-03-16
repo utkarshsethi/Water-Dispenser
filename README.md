@@ -1,2 +1,2 @@
-## Automatic Filtered Water Dispenser
+## Automatic Water Dispenser
 
