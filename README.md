@@ -16,7 +16,7 @@ Goals
 
 
 
-The wiring diagram can be found [here](https://github.com/StorageB/Water-Dispenser/blob/master/Wiring-diagram.pdf)
+The wiring diagram can be found [here](https://github.com/StorageB/Water-Dispenser/blob/master/wiring-diagram.pdf)
 
 A complete parts list can be found [here](https://github.com/StorageB/Water-Dispenser/blob/master/Parts-List.md)
 
