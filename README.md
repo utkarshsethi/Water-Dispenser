@@ -1,6 +1,8 @@
 ## Automatic Filtered Water Dispenser
 
+### Project Description 
 
+(work in progress)
 
 The purpose of this project was to create a water filtration system that dispenses water automatically when a glass is placed under the tap.
 
@@ -14,21 +16,21 @@ Goals
 
 
 
-Wiring diagram link
+The wiring diagram can be found [here](https://github.com/StorageB/Water-Dispenser/blob/master/Wiring-diagram.pdf)
 
-A complete parts list can be found here.
+A complete parts list can be found [here](https://github.com/StorageB/Water-Dispenser/blob/master/Parts-List.md)
 
-Pictures
+(pictures go here)
+
+### Build Notes and Considerations
 
 
+#### Valve
+1. When choosing a valve, make sure it is a fail close valve. If the power goes out or it loses signal from the microcontroller, the valve should close or remain closed
+2. You can find cheaper cheaper solenoid valves on Amazon or other sites, but keep in mind the following
+      - Safety: It needs to be safe to use for beverage applications (need to use lead free brass and safe to use plastics). 
+      - Reliability: This is a commercial valve made specifically for this application. I would not trust a $3 valve from Amazon when installing this permanently in my house.
 
-
-
-Cheaper solenoid valves can be found on Amazon, but it needs to be  safe to use Safe for food and beverage (Amazon valve uses brass, but make sure lead free brass).
-
-, reliability, - this is a commercial valve, specifically made for this application.
-
-Valve should fail close (power outage)
 
 
 
