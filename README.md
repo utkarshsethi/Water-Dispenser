@@ -8,13 +8,11 @@ The purpose of this project was to create a water filtration system that dispens
 
 (video link to come)
 
-### Wiring Diagram
+### Wiring Diagram and Parts List
 
-The wiring diagram can be found [here](https://github.com/StorageB/Water-Dispenser/blob/master/wiring-diagram.pdf)
+[wiring diagram](https://github.com/StorageB/Water-Dispenser/blob/master/wiring-diagram.pdf)
 
-### Parts List
-
-A complete parts list can be found [here](https://github.com/StorageB/Water-Dispenser/blob/master/parts-list.md)
+[parts list](https://github.com/StorageB/Water-Dispenser/blob/master/parts-list.md)
 
 
 
