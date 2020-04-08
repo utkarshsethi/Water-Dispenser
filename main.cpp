@@ -10,7 +10,7 @@
 #define switch_input   D7   // pushbutton switch input pin
 #define led_pin        D2   // NeoPixel strip signal pin
 #define led_count      8    // number of LEDs in NeoPixel strip
-#define led_brightness 100   // NeoPixel brightness (max = 255)
+#define led_brightness 200  // NeoPixel brightness (max = 255)
 #define pwmIntervals   100  // number of intervals in the fade in/out for loops
 
 int ir_state;               // state of IR sensor - LOW if object detected, HIGH if no object detected
