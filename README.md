@@ -4,9 +4,7 @@
 
 The purpose of this project was to create a water filtration system that dispenses water automatically when a glass is placed under the tap. It should fade on LEDs when dispensing water, and should log how much water I drink and alert me when to change the filter.
 
-(picture link to come)
 
-(video link to come)
 
 ### Wiring Diagram and Parts List
 
