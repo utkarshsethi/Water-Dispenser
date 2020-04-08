@@ -7,6 +7,7 @@
 | water filtration system      | $99   | [Aquasana](https://www.aquasana.com/drinking-water-filter-systems/under-counter-faucet-2-stage/chrome) |
 | water tubing                 | $4.37 | [Home Depot](https://www.homedepot.com/p/Everbilt-1-4-in-O-D-x-1-6-in-I-D-x-25-ft-Polyethylene-Tubing-701873/207144363) |
 | water fittings for valve (2) | $9.24 | [Home Depot](https://www.homedepot.com/p/Everbilt-1-4-in-x-1-4-in-MIP-Lead-Free-Brass-Compression-Adapter-Fitting-801079/207176793?MERCH=REC-_-rv_cartempty_rr-_-NA-_-207176793-_-N) |
+| 90 degree tap fitting        | $4.18 | [Home Depot](https://www.homedepot.com/p/John-Guest-1-4-in-O-D-x-1-4-in-O-D-NPTF-Polypropylene-Push-to-Connect-90-Degree-Elbow-Fitting-804529/303347813) |
 |                              |       |                                                              |
 
 ### Electronics
