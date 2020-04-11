@@ -14,7 +14,7 @@
 #define led_pin        D2     // NeoPixel strip signal pin
 #define led_count      8      // number of LEDs in NeoPixel strip
 #define led_brightness 125    // NeoPixel brightness (max = 255)
-#define pwm_intervals   100    // number of intervals in the fade in/out for loops    
+#define pwm_intervals  100    // number of intervals in the fade in/out for loops    
 #define ir_input_delay 100    // how long to wait once an object is detected by IR sensor before opening valve
 #define error_time     60000  // amount of time valve can be open before automatically turning off and displaying an error
 
