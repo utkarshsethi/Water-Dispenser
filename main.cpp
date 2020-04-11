@@ -34,8 +34,8 @@ Adafruit_NeoPixel strip(led_count, led_pin, NEO_GRB + NEO_KHZ800);
 
 // Required for OTA programming
 #ifndef STASSID
-#define STASSID "ATTbR6Tspi"    // enter network name
-#define STAPSK  "jbkajycs%g29"  // enter password
+#define STASSID "network"   // enter network name
+#define STAPSK  "password"  // enter password
 #endif
 const char* ssid = STASSID;
 const char* password = STAPSK;
