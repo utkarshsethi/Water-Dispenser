@@ -14,21 +14,20 @@
 #define led_pin        D2     // NeoPixel strip signal pin
 #define led_count      8      // number of LEDs in NeoPixel strip
 #define led_brightness 125    // NeoPixel brightness (max = 255)
-#define pwmIntervals   100    // number of intervals in the fade in/out for loops    
-#define error_time     60000  // amount of time valve can be open before automatically turning off and displaying an erro
+#define pwm_intervals   100    // number of intervals in the fade in/out for loops    
+#define ir_input_delay 100    // how long to wait once an object is detected by IR sensor before opening valve
+#define error_time     60000  // amount of time valve can be open before automatically turning off and displaying an error
 
 int ir_state;                 // state of IR sensor - LOW if object detected, HIGH if no object detected
 int switch_state;             // state of pushbutton switch - HIGH if pressed, LOW if not pressed
 int light_on = 0;             // state of NeoPixel strip: 1 if on, 0 if off
-int valve_open = 0;           // state of the valve: 1 if open, 0 if closed 
-int ir_input_delay = 100;     // how long to wait once an object is detected by IR sensor - this prevents ghost inputs 
+int valve_open = 0;           // state of valve: 1 if open, 0 if closed 
 int error_status = 0;         // set to 0 if no errors, 1 if there is an error
 
 unsigned long current_time = 0; // used to get current time
 unsigned long timer_start = 0;  // used to start timer when valve is open
 
-
-float R = (pwmIntervals * log10(2))/(log10(255)); // used to calculate the 'R' value for fading LEDs
+float R = (pwm_intervals * log10(2))/(log10(255)); // used to calculate the 'R' value for fading LEDs
 
 // Declare NeoPixel strip object:
 Adafruit_NeoPixel strip(led_count, led_pin, NEO_GRB + NEO_KHZ800);
@@ -113,20 +112,19 @@ void setup() {
   strip.begin();                        // INITIALIZE NeoPixel strip object (REQUIRED)
   strip.show();                         // Turn OFF all pixels ASAP
   strip.setBrightness(led_brightness);  // Set BRIGHTNESS (max = 255)
-
 }
 
 
 // Fade LEDs on
-void fade_in(String fade_color, /*uint32_t color,*/ int wait) {
+void fade_in(String fade_color, int wait) {
   int brightness = 0;
-  for(int i=0; i<=pwmIntervals; i++){
+  for(int i = 0; i <= pwm_intervals; i++){
     brightness = pow (2, (i / R)) - 1;
-    for(int j=0; j<strip.numPixels(); j++) {
-      if(fade_color=="blue") {
+    for(int j = 0; j < strip.numPixels(); j++) {
+      if(fade_color == "blue") {
         strip.setPixelColor(j,0,0,brightness);
       }
-      if (fade_color=="red") {
+      if (fade_color == "red") {
         strip.setPixelColor(j,brightness,0,0);
       }
     }
@@ -136,15 +134,15 @@ void fade_in(String fade_color, /*uint32_t color,*/ int wait) {
 }
 
 // Fade LEDs off
-void fade_out(String fade_color,/*uint32_t color, */int wait) {
+void fade_out(String fade_color, int wait) {
   int brightness = 255;
-  for(int i=pwmIntervals; i>=0; i--){
+  for(int i = pwm_intervals; i >= 0; i--){
     brightness = pow (2, (i / R)) - 1;
-    for(int j=0; j<strip.numPixels(); j++) {
-      if(fade_color=="blue") {
+    for(int j = 0; j < strip.numPixels(); j++) {
+      if(fade_color == "blue") {
         strip.setPixelColor(j,0,0,brightness);
       }
-      if (fade_color=="red") {
+      if (fade_color == "red") {
         strip.setPixelColor(j,brightness,0,0);
       }
     }
@@ -163,9 +161,9 @@ void error() {
     // uncomment to allow for OTA programming if stuck in this infinite loop, otherwise reset button must be pressed
     // ArduinoOTA.handle(); 
 
-    fade_in("red",3);
+    fade_in("red", 3);
     digitalWrite(LED_BUILTIN, LOW);
-    fade_out("red",3);
+    fade_out("red", 3);
     digitalWrite(LED_BUILTIN, HIGH);
     delay(50);
   }
@@ -191,7 +189,7 @@ void turn_on() {
       error();
     }
   }
-  delay(50);
+  delay(10);
 }
 
 // Close valve and turn off NeoPixels
@@ -205,7 +203,7 @@ void turn_off() {
     fade_out("blue", 5);
     light_on = 0;
   }
-  delay(50);
+  delay(10);
 }
 
 
